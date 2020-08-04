@@ -4,3 +4,4 @@
  */
 
 export { TextWidget } from './theme/Widgets/TextWidget';
+export { TokenWidget } from './theme/Widgets/TokenWidget';
