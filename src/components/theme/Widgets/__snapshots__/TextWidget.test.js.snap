@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextWidget renders a TextWidget 1`] = `
+<span
+  className="metadata text widget description"
+>
+  Foo bar
+</span>
+`;
