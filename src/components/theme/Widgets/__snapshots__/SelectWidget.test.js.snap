@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectWidget renders a full select view widget component 1`] = `
+<span
+  className="metadata select widget"
+>
+  Foo Bar
+</span>
+`;
+
+exports[`SelectWidget renders a select view widget component 1`] = `
+<span
+  className="metadata select widget"
+>
+  Foo Bar
+</span>
+`;
+
+exports[`SelectWidget renders a simple select view widget component 1`] = `
+<span
+  className="metadata select widget"
+>
+  Foo Bar
+</span>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RichTextWidget renders a rich text view widget component 1`] = `
+<div
+  className="metadata richtext widget"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<b>Foo bar</b>",
+    }
+  }
+/>
+`;

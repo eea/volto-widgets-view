@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailWidget renders an email view widget component 1`] = `
+<a
+  className="metadata email widget"
+  href="mailto:foo@bar.com"
+  rel="noreferrer"
+  target="_blank"
+>
+  foo@bar.com
+</a>
+`;

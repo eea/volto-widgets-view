@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrlWidget renders an URL view widget component 1`] = `
+<a
+  className="metadata url widget"
+  href="http://foobar.com"
+  rel="noreferrer"
+  target="_blank"
+>
+  http://foobar.com
+</a>
+`;

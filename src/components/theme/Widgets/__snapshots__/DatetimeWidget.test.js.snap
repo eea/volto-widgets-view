@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatetimeWidget renders a date view widget component 1`] = `
+<span
+  className="metadata datetime widget"
+>
+  Aug 4, 2020 9:00 AM
+</span>
+`;
