@@ -2,7 +2,7 @@
 
 exports[`TokenWidget renders view widget based on @plone/volto Tags component 1`] = `
 <div
-  className="meta token widget subjects"
+  className="meta tags token widget"
 >
   <div
     className="ui container tags"

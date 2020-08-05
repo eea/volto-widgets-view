@@ -1,6 +1,6 @@
-import { getWidgetView } from "./helpers";
-import { TextWidget } from "./components";
-import { TokenWidget } from "./components";
+import { getWidgetView } from './helpers';
+import { TextWidget } from './components';
+import { TokenWidget } from './components';
 
 const applyConfig = (config) => {
   config.widgets.views = {
@@ -13,7 +13,7 @@ const applyConfig = (config) => {
     widget: {},
     vocabulary: {},
     choices: {},
-    type: {}
+    type: {},
   };
 
   return config;

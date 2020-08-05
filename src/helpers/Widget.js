@@ -55,18 +55,18 @@ const getWidgetByVocabularyFromHint = (props) =>
  * @returns {string} Widget component.
  */
 const getWidgetByChoices = (props) => {
-    if (props.choices) {
-      return widgets.views.choices;
-    }
+  if (props.choices) {
+    return widgets.views.choices;
+  }
 
-    if (props.vocabulary) {
-      // If vocabulary exists, then it means it's a choice field in disguise with
-      // no widget specified that probably contains a string then we force it
-      // to be a select widget instead
-      return widgets.views.choices;
-    }
+  if (props.vocabulary) {
+    // If vocabulary exists, then it means it's a choice field in disguise with
+    // no widget specified that probably contains a string then we force it
+    // to be a select widget instead
+    return widgets.views.choices;
+  }
 
-    return null;
+  return null;
 };
 
 /**
@@ -90,12 +90,11 @@ const getWidgetDefault = () => widgets.views.default;
  * @param {dict} props Props
  * @returns {string} Widget component.
  */
-export const getWidgetView = (props) => (
-    getWidgetByFieldId(props.id) ||
-    getWidgetByName(props.widget) ||
-    getWidgetByChoices(props) ||
-    getWidgetByVocabulary(props.vocabulary) ||
-    getWidgetByVocabularyFromHint(props) ||
-    getWidgetByType(props.type) ||
-    getWidgetDefault()
-);
+export const getWidgetView = (props) =>
+  getWidgetByFieldId(props.id) ||
+  getWidgetByName(props.widget) ||
+  getWidgetByChoices(props) ||
+  getWidgetByVocabulary(props.vocabulary) ||
+  getWidgetByVocabularyFromHint(props) ||
+  getWidgetByType(props.type) ||
+  getWidgetDefault();

@@ -2,7 +2,7 @@
 
 exports[`TextWidget renders a text view widget component 1`] = `
 <span
-  className="metadata text widget description"
+  className="metadata text widget"
 >
   Foo bar
 </span>
