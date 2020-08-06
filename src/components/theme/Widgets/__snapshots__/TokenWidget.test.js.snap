@@ -1,34 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TokenWidget renders an empty view widget based on @plone/volto Tags component 1`] = `
-<div
+<span
   className="token widget"
 >
   
-</div>
+</span>
 `;
 
 exports[`TokenWidget renders view widget based on @plone/volto Tags component 1`] = `
-<div
+<span
   className="meta tags token widget"
 >
-  <div
-    className="ui container tags"
+  <a
+    className="ui label"
+    href="/search?Subject=foo"
   >
-    <a
-      className="ui label"
-      href="/search?Subject=foo"
-      onClick={[Function]}
-    >
-      foo
-    </a>
-    <a
-      className="ui label"
-      href="/search?Subject=bar"
-      onClick={[Function]}
-    >
-      bar
-    </a>
-  </div>
-</div>
+    foo
+  </a>
+  <a
+    className="ui label"
+    href="/search?Subject=bar"
+  >
+    bar
+  </a>
+</span>
 `;

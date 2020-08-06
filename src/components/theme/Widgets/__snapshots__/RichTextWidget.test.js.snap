@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RichTextWidget renders a rich text view widget component 1`] = `
-<div
+<p
   className="metadata richtext widget"
   dangerouslySetInnerHTML={
     Object {
@@ -11,8 +11,4 @@ exports[`RichTextWidget renders a rich text view widget component 1`] = `
 />
 `;
 
-exports[`RichTextWidget renders an empty rich text view widget component 1`] = `
-<div
-  className="richtext widget"
-/>
-`;
+exports[`RichTextWidget renders an empty rich text view widget component 1`] = `""`;
