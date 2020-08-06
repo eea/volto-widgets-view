@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TokenWidget renders an empty view widget based on @plone/volto Tags component 1`] = `
+<div
+  className="token widget"
+>
+  
+</div>
+`;
+
 exports[`TokenWidget renders view widget based on @plone/volto Tags component 1`] = `
 <div
   className="meta tags token widget"

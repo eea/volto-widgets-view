@@ -38,3 +38,11 @@ exports[`ArrayWidget renders a vocabulary array view widget component 1`] = `
   </span>
 </div>
 `;
+
+exports[`ArrayWidget renders an empty array view widget component 1`] = `
+<div
+  className="array widget"
+>
+  <span />
+</div>
+`;

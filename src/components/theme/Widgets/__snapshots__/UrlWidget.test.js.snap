@@ -10,3 +10,5 @@ exports[`UrlWidget renders an URL view widget component 1`] = `
   http://foobar.com
 </a>
 `;
+
+exports[`UrlWidget renders an empty URL view widget component 1`] = `""`;

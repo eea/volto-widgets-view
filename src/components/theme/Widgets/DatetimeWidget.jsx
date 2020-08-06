@@ -5,11 +5,10 @@ import moment from 'moment';
 // import 'moment/locale/en-gb';
 // import { useIntl } from 'react-intl';
 
-export const DatetimeWidget = ({ children, className }) => {
+export const DatetimeWidget = ({ children, className }) => (
   // const intl = useIntl();
   // moment.locale(intl.locale);
-  const datetime = moment(children).format('lll');
-  return (
-    <span className={cx(className, 'datetime', 'widget')}>{datetime}</span>
-  );
-};
+  <span className={cx(className, 'datetime', 'widget')}>
+    {children ? moment(children).format('lll') : ''}
+  </span>
+);

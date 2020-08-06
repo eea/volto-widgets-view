@@ -3,10 +3,8 @@ import renderer from 'react-test-renderer';
 import { SelectWidget } from './SelectWidget';
 
 describe('SelectWidget', () => {
-  it('renders a simple select view widget component', () => {
-    const component = renderer.create(
-      <SelectWidget className="metadata">Foo Bar</SelectWidget>,
-    );
+  it('renders an empty select view widget component', () => {
+    const component = renderer.create(<SelectWidget />);
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });

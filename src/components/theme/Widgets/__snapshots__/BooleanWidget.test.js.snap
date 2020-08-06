@@ -15,3 +15,11 @@ exports[`BooleanWidget renders a boolean true view widget component 1`] = `
   Yes
 </span>
 `;
+
+exports[`BooleanWidget renders an empty boolean true view widget component 1`] = `
+<span
+  className="boolean widget"
+>
+  No
+</span>
+`;

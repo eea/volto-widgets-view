@@ -7,3 +7,11 @@ exports[`DateWidget renders a date view widget component 1`] = `
   Aug 18, 2020
 </span>
 `;
+
+exports[`DateWidget renders an empty date view widget component 1`] = `
+<span
+  className="date widget"
+>
+  
+</span>
+`;

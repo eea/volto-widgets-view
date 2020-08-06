@@ -10,3 +10,5 @@ exports[`EmailWidget renders an email view widget component 1`] = `
   foo@bar.com
 </a>
 `;
+
+exports[`EmailWidget renders an empty email view widget component 1`] = `""`;

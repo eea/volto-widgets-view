@@ -4,6 +4,6 @@ import { Tags } from '@plone/volto/components';
 
 export const TokenWidget = ({ children, className }) => (
   <div className={cx(className, 'token', 'widget')}>
-    <Tags tags={children} />
+    {children ? <Tags tags={children} /> : ''}
   </div>
 );

@@ -7,3 +7,9 @@ exports[`TextWidget renders a text view widget component 1`] = `
   Foo bar
 </span>
 `;
+
+exports[`TextWidget renders an empty text view widget component 1`] = `
+<span
+  className="text widget"
+/>
+`;
