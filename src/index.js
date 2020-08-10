@@ -29,7 +29,7 @@ const applyConfig = (config) => {
       password: PasswordWidget,
       richtext: RichTextWidget,
       string: TextWidget,
-      subjects: TokenWidget,
+      tags: TokenWidget,
       textarea: TextWidget,
       url: UrlWidget,
     },
