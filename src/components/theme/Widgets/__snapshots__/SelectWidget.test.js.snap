@@ -8,6 +8,16 @@ exports[`SelectWidget renders a full select view widget component 1`] = `
 </span>
 `;
 
+exports[`SelectWidget renders a full select view widget component with children 1`] = `
+<span
+  className="metadata select widget"
+>
+  <strong>
+    Foo Bar
+  </strong>
+</span>
+`;
+
 exports[`SelectWidget renders a select view widget component 1`] = `
 <span
   className="metadata select widget"
@@ -16,8 +26,4 @@ exports[`SelectWidget renders a select view widget component 1`] = `
 </span>
 `;
 
-exports[`SelectWidget renders an empty select view widget component 1`] = `
-<span
-  className="select widget"
-/>
-`;
+exports[`SelectWidget renders an empty select view widget component 1`] = `""`;

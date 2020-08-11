@@ -11,4 +11,15 @@ exports[`RichTextWidget renders a rich text view widget component 1`] = `
 />
 `;
 
+exports[`RichTextWidget renders a rich text view widget component with children 1`] = `
+<p
+  className="metadata richtext widget"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<b>Foo bar</b>",
+    }
+  }
+/>
+`;
+
 exports[`RichTextWidget renders an empty rich text view widget component 1`] = `""`;

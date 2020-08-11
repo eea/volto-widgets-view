@@ -8,8 +8,14 @@ exports[`TextWidget renders a text view widget component 1`] = `
 </span>
 `;
 
-exports[`TextWidget renders an empty text view widget component 1`] = `
+exports[`TextWidget renders a text view widget component with children 1`] = `
 <span
-  className="text widget"
-/>
+  className="metadata text widget"
+>
+  <strong>
+    Foo bar
+  </strong>
+</span>
 `;
+
+exports[`TextWidget renders an empty text view widget component 1`] = `""`;

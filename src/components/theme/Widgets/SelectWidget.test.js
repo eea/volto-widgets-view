@@ -11,7 +11,7 @@ describe('SelectWidget', () => {
 
   it('renders a select view widget component', () => {
     const component = renderer.create(
-      <SelectWidget className="metadata">{{ title: 'Foo Bar' }}</SelectWidget>,
+      <SelectWidget className="metadata" value={{ title: 'Foo Bar' }} />,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
@@ -19,8 +19,22 @@ describe('SelectWidget', () => {
 
   it('renders a full select view widget component', () => {
     const component = renderer.create(
-      <SelectWidget className="metadata">
-        {{ title: 'Foo Bar', token: 'foobar' }}
+      <SelectWidget
+        className="metadata"
+        value={{ title: 'Foo Bar', token: 'foobar' }}
+      />,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders a full select view widget component with children', () => {
+    const component = renderer.create(
+      <SelectWidget
+        className="metadata"
+        value={{ title: 'Foo Bar', token: 'foobar' }}
+      >
+        {(child) => <strong>{child}</strong>}
       </SelectWidget>,
     );
     const json = component.toJSON();

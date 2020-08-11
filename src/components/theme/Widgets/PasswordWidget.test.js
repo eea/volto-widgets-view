@@ -11,8 +11,16 @@ describe('PasswordWidget', () => {
 
   it('renders a password view widget component', () => {
     const component = renderer.create(
-      <PasswordWidget className="metadata">
-        A very strong password
+      <PasswordWidget className="metadata" value="A very strong password" />,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders a password view widget component with children', () => {
+    const component = renderer.create(
+      <PasswordWidget className="metadata" value="A very strong password">
+        {(child) => <strong>{child}</strong>}
       </PasswordWidget>,
     );
     const json = component.toJSON();

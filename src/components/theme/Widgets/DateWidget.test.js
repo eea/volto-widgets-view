@@ -11,7 +11,17 @@ describe('DateWidget', () => {
 
   it('renders a date view widget component', () => {
     const component = renderer.create(
-      <DateWidget className="metadata">2020-08-18</DateWidget>,
+      <DateWidget className="metadata" value="2020-08-18" />,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders a date view widget component with children', () => {
+    const component = renderer.create(
+      <DateWidget className="metadata" value="2020-08-18">
+        {(child) => <strong>{child}</strong>}
+      </DateWidget>,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();

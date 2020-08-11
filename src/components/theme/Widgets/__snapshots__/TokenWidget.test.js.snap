@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TokenWidget renders an empty view widget based on @plone/volto Tags component 1`] = `
-<span
-  className="token widget"
->
-  
-</span>
-`;
+exports[`TokenWidget renders an empty tags view widget component 1`] = `""`;
 
-exports[`TokenWidget renders view widget based on @plone/volto Tags component 1`] = `
+exports[`TokenWidget renders tags view widget component 1`] = `
 <span
   className="meta tags token widget"
 >
@@ -23,6 +17,29 @@ exports[`TokenWidget renders view widget based on @plone/volto Tags component 1`
     href="/search?Subject=bar"
   >
     bar
+  </a>
+</span>
+`;
+
+exports[`TokenWidget renders tags view widget component with children 1`] = `
+<span
+  className="meta tags token widget"
+>
+  <a
+    className="ui label"
+    href="/search?Subject=foo"
+  >
+    <strong>
+      foo
+    </strong>
+  </a>
+  <a
+    className="ui label"
+    href="/search?Subject=bar"
+  >
+    <strong>
+      bar
+    </strong>
   </a>
 </span>
 `;

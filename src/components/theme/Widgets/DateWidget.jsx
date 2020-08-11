@@ -2,13 +2,13 @@ import React from 'react';
 import cx from 'classnames';
 import moment from 'moment';
 
-// import 'moment/locale/en-gb';
-// import { useIntl } from 'react-intl';
-
-export const DateWidget = ({ children, className }) => (
-  // const intl = useIntl();
-  // moment.locale(intl.locale);
-  <span className={cx(className, 'date', 'widget')}>
-    {children ? moment(children).format('ll') : ''}
-  </span>
-);
+export const DateWidget = ({ value, children, className }) =>
+  value ? (
+    <span className={cx(className, 'date', 'widget')}>
+      {children
+        ? children(moment(value).format('ll'))
+        : moment(value).format('ll')}
+    </span>
+  ) : (
+    ''
+  );

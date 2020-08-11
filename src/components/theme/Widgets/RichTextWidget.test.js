@@ -8,10 +8,22 @@ describe('RichTextWidget', () => {
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
   });
+
   it('renders a rich text view widget component', () => {
     const component = renderer.create(
-      <RichTextWidget className="metadata">
-        {{ data: '<b>Foo bar</b>' }}
+      <RichTextWidget
+        className="metadata"
+        value={{ data: '<b>Foo bar</b>' }}
+      />,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders a rich text view widget component with children', () => {
+    const component = renderer.create(
+      <RichTextWidget className="metadata" value={{ data: '<b>Foo bar</b>' }}>
+        {(child) => <strong>{child}</strong>}
       </RichTextWidget>,
     );
     const json = component.toJSON();

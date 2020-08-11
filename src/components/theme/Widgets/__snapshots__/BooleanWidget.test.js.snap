@@ -8,6 +8,16 @@ exports[`BooleanWidget renders a boolean false view widget component 1`] = `
 </span>
 `;
 
+exports[`BooleanWidget renders a boolean false view widget component with children 1`] = `
+<span
+  className="metadata boolean widget"
+>
+  <strong>
+    No
+  </strong>
+</span>
+`;
+
 exports[`BooleanWidget renders a boolean true view widget component 1`] = `
 <span
   className="metadata boolean widget"
@@ -16,10 +26,14 @@ exports[`BooleanWidget renders a boolean true view widget component 1`] = `
 </span>
 `;
 
-exports[`BooleanWidget renders an empty boolean true view widget component 1`] = `
+exports[`BooleanWidget renders a boolean true view widget component with children 1`] = `
 <span
-  className="boolean widget"
+  className="metadata boolean widget"
 >
-  No
+  <strong>
+    Yes
+  </strong>
 </span>
 `;
+
+exports[`BooleanWidget renders an empty boolean view widget component 1`] = `""`;

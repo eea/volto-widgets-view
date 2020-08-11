@@ -13,6 +13,23 @@ exports[`ArrayWidget renders a full vocabulary array view widget component 1`] =
 </span>
 `;
 
+exports[`ArrayWidget renders a full vocabulary array view widget component with children 1`] = `
+<span
+  className="metadata array widget"
+>
+  <span>
+    <strong>
+      Foo
+    </strong>
+  </span>
+  <span>
+    <strong>
+      Bar
+    </strong>
+  </span>
+</span>
+`;
+
 exports[`ArrayWidget renders a simple array view widget component 1`] = `
 <span
   className="metadata array widget"
@@ -39,10 +56,4 @@ exports[`ArrayWidget renders a vocabulary array view widget component 1`] = `
 </span>
 `;
 
-exports[`ArrayWidget renders an empty array view widget component 1`] = `
-<span
-  className="array widget"
->
-  
-</span>
-`;
+exports[`ArrayWidget renders an empty array view widget component 1`] = `""`;

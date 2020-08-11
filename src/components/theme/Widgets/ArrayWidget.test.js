@@ -11,7 +11,7 @@ describe('ArrayWidget', () => {
 
   it('renders a simple array view widget component', () => {
     const component = renderer.create(
-      <ArrayWidget className="metadata">{['foo', 'bar']}</ArrayWidget>,
+      <ArrayWidget className="metadata" value={['foo', 'bar']} />,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
@@ -19,9 +19,10 @@ describe('ArrayWidget', () => {
 
   it('renders a vocabulary array view widget component', () => {
     const component = renderer.create(
-      <ArrayWidget className="metadata">
-        {[{ title: 'Foo' }, { title: 'Bar' }]}
-      </ArrayWidget>,
+      <ArrayWidget
+        className="metadata"
+        value={[{ title: 'Foo' }, { title: 'Bar' }]}
+      />,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
@@ -29,11 +30,28 @@ describe('ArrayWidget', () => {
 
   it('renders a full vocabulary array view widget component', () => {
     const component = renderer.create(
-      <ArrayWidget className="metadata">
-        {[
+      <ArrayWidget
+        className="metadata"
+        value={[
           { title: 'Foo', token: 'foo' },
           { title: 'Bar', token: 'bar' },
         ]}
+      />,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders a full vocabulary array view widget component with children', () => {
+    const component = renderer.create(
+      <ArrayWidget
+        className="metadata"
+        value={[
+          { title: 'Foo', token: 'foo' },
+          { title: 'Bar', token: 'bar' },
+        ]}
+      >
+        {(child) => <strong>{child}</strong>}
       </ArrayWidget>,
     );
     const json = component.toJSON();

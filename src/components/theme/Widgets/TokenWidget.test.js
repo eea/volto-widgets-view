@@ -4,7 +4,7 @@ import { TokenWidget } from './TokenWidget';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('TokenWidget', () => {
-  it('renders an empty view widget based on @plone/volto Tags component', () => {
+  it('renders an empty tags view widget component', () => {
     const component = renderer.create(
       <MemoryRouter>
         <TokenWidget />
@@ -14,10 +14,22 @@ describe('TokenWidget', () => {
     expect(json).toMatchSnapshot();
   });
 
-  it('renders view widget based on @plone/volto Tags component', () => {
+  it('renders tags view widget component', () => {
     const component = renderer.create(
       <MemoryRouter>
-        <TokenWidget className="meta tags">{['foo', 'bar']}</TokenWidget>
+        <TokenWidget className="meta tags" value={['foo', 'bar']} />
+      </MemoryRouter>,
+    );
+    const json = component.toJSON();
+    expect(json).toMatchSnapshot();
+  });
+
+  it('renders tags view widget component with children', () => {
+    const component = renderer.create(
+      <MemoryRouter>
+        <TokenWidget className="meta tags" value={['foo', 'bar']}>
+          {(child) => <strong>{child}</strong>}
+        </TokenWidget>
       </MemoryRouter>,
     );
     const json = component.toJSON();

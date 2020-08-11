@@ -1,15 +1,15 @@
 import React from 'react';
 import cx from 'classnames';
 
-export const UrlWidget = ({ children, className }) =>
-  children ? (
+export const UrlWidget = ({ value, children, className }) =>
+  value ? (
     <a
-      href={children}
+      href={value}
       className={cx(className, 'url', 'widget')}
       rel="noreferrer"
       target="_blank"
     >
-      {children}
+      {children ? children(value) : value}
     </a>
   ) : (
     ''
