@@ -51,6 +51,7 @@ Before starting make sure your development environment is properly set. See [Vol
         {
             "volto-widgets-view": {
                 "url": "https://github.com/eea/volto-widgets-view.git",
+                "package": "@eeacms/volto-widgets-view",
                 "branch": "develop",
                 "path": "src"
             }
