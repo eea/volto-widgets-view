@@ -5,11 +5,13 @@ import { DateWidget } from './components';
 import { EmailWidget } from './components';
 import { getWidgetView } from './helpers';
 import { PasswordWidget } from './components';
+import { RelationsWidget } from './components';
+import { RelationWidget } from './components';
+import { RichTextWidget } from './components';
 import { SelectWidget } from './components';
 import { TextWidget } from './components';
 import { TokenWidget } from './components';
 import { UrlWidget } from './components';
-import { RichTextWidget } from './components';
 
 const applyConfig = (config) => {
   config.widgets.views = {
@@ -18,6 +20,7 @@ const applyConfig = (config) => {
     default: TextWidget,
     id: {
       subjects: TokenWidget,
+      relatedItems: RelationsWidget,
     },
     widget: {
       array: ArrayWidget,
@@ -27,6 +30,8 @@ const applyConfig = (config) => {
       datetime: DatetimeWidget,
       email: EmailWidget,
       password: PasswordWidget,
+      relation: RelationWidget,
+      relations: RelationsWidget,
       richtext: RichTextWidget,
       string: TextWidget,
       tags: TokenWidget,
