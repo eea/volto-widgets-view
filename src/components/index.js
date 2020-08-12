@@ -7,6 +7,8 @@ export { BooleanWidget } from './theme/Widgets/BooleanWidget';
 export { DatetimeWidget } from './theme/Widgets/DatetimeWidget';
 export { DateWidget } from './theme/Widgets/DateWidget';
 export { EmailWidget } from './theme/Widgets/EmailWidget';
+export { FileWidget } from './theme/Widgets/FileWidget';
+export { ImageWidget } from './theme/Widgets/ImageWidget';
 export { PasswordWidget } from './theme/Widgets/PasswordWidget';
 export { RelationsWidget } from './theme/Widgets/RelationsWidget';
 export { RelationWidget } from './theme/Widgets/RelationWidget';

@@ -3,7 +3,9 @@ import { BooleanWidget } from './components';
 import { DatetimeWidget } from './components';
 import { DateWidget } from './components';
 import { EmailWidget } from './components';
+import { FileWidget } from './components';
 import { getWidgetView } from './helpers';
+import { ImageWidget } from './components';
 import { PasswordWidget } from './components';
 import { RelationsWidget } from './components';
 import { RelationWidget } from './components';
@@ -21,6 +23,8 @@ const applyConfig = (config) => {
     id: {
       subjects: TokenWidget,
       relatedItems: RelationsWidget,
+      image: ImageWidget,
+      file: FileWidget,
     },
     widget: {
       array: ArrayWidget,
@@ -29,6 +33,8 @@ const applyConfig = (config) => {
       date: DateWidget,
       datetime: DatetimeWidget,
       email: EmailWidget,
+      file: FileWidget,
+      image: ImageWidget,
       password: PasswordWidget,
       relation: RelationWidget,
       relations: RelationsWidget,
