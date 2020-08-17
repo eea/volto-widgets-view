@@ -19,7 +19,11 @@ export const ImageWidget = ({ value, className }) =>
   value ? (
     <span className={cx(className, 'image', 'widget')}>
       <img
-        src={flattenToAppURL(value.download)}
+        src={
+          value.data
+            ? `data:${value['content-type']};base64,${value.data}`
+            : flattenToAppURL(value.download || '')
+        }
         alt={value.file_name || ''}
         data-size={value.size || 0}
         data-size-fmt={niceBytes(value.size || 0)}
