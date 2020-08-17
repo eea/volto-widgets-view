@@ -1,13 +1,13 @@
 import React from 'react';
 import cx from 'classnames';
-import { settings } from '~/config';
+import { flattenToAppURL } from '@plone/volto/helpers';
 
 export const RelationWidget = ({ value, children, className }) => {
   if (!value) {
     return '';
   }
 
-  const url = (value['@id'] || '#').replace(settings.apiPath, '');
+  const url = flattenToAppURL(value['@id'] || '#');
   const state = value.review_state || '';
   const description = value.description || '';
   const type = value['@type'] || '';
