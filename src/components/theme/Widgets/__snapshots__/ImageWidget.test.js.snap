@@ -10,7 +10,7 @@ exports[`ImageWidget renders an image view widget component 1`] = `
     alt=""
     data-content-type=""
     data-size={0}
-    data-size-fmt="0.00B"
+    data-size-fmt="0B"
     src="/foo-bar.png"
   />
 </span>
@@ -24,7 +24,7 @@ exports[`ImageWidget renders an image view widget component with children 1`] = 
     alt="foo-bar.png"
     data-content-type=""
     data-size={0}
-    data-size-fmt="0.00B"
+    data-size-fmt="0B"
     src="/foo-bar.png"
   />
 </span>

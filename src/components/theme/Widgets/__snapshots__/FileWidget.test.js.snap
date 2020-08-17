@@ -5,7 +5,7 @@ exports[`FileWidget renders a file view widget component 1`] = `
   className="metadata file widget"
   data-content-type=""
   data-size={0}
-  data-size-fmt="0.00B"
+  data-size-fmt="0B"
   href="/foo-bar.pdf"
   title="/foo-bar.pdf"
 >
@@ -18,7 +18,7 @@ exports[`FileWidget renders a file view widget component with children 1`] = `
   className="metadata file widget"
   data-content-type="application/x-pdf"
   data-size={123456}
-  data-size-fmt="123.46kB"
+  data-size-fmt="121kB"
   href="/foo-bar.pdf"
   title="application/x-pdf"
 >
@@ -33,7 +33,7 @@ exports[`FileWidget renders a simple file view widget component 1`] = `
   className="metadata file widget"
   data-content-type=""
   data-size={0}
-  data-size-fmt="0.00B"
+  data-size-fmt="0B"
   href="/foo-bar.pdf"
   title="/foo-bar.pdf"
 >

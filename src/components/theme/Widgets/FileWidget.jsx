@@ -5,10 +5,10 @@ import { flattenToAppURL } from '@plone/volto/helpers';
 const niceBytes = (bytes) => {
   bytes = Number(bytes);
 
-  const divider = 1000;
+  const divider = 1024;
   const magnitude = (Math.log(bytes) / Math.log(divider)) | 0;
   const result = bytes / Math.pow(divider, magnitude);
-  const fixed = result.toFixed(2);
+  const fixed = result.toFixed(0);
 
   const suffix = magnitude ? 'kMGTPEZY'[magnitude - 1] + 'B' : 'B';
 
@@ -22,7 +22,7 @@ export const FileWidget = ({ value, children, className }) => {
 
   const url = flattenToAppURL(value.download || value.filename || value);
   const filename = value.filename || url;
-  const size = value.size || 0;
+  const size = value.data ? value.data.length * 0.75 : value.size || 0;
   const ctype = value['content-type'] || '';
   return (
     <a
