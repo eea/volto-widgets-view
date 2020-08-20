@@ -2,6 +2,7 @@ import { ArrayWidget } from './components';
 import { BooleanWidget } from './components';
 import { DatetimeWidget } from './components';
 import { DateWidget } from './components';
+import { DescriptionWidget } from './components';
 import { EmailWidget } from './components';
 import { FileWidget } from './components';
 import { getWidgetView } from './helpers';
@@ -12,6 +13,7 @@ import { RelationWidget } from './components';
 import { RichTextWidget } from './components';
 import { SelectWidget } from './components';
 import { TextWidget } from './components';
+import { TitleWidget } from './components';
 import { TokenWidget } from './components';
 import { UrlWidget } from './components';
 
@@ -21,10 +23,10 @@ const applyConfig = (config) => {
     getWidget: getWidgetView,
     default: TextWidget,
     id: {
-      subjects: TokenWidget,
-      relatedItems: RelationsWidget,
-      image: ImageWidget,
       file: FileWidget,
+      image: ImageWidget,
+      relatedItems: RelationsWidget,
+      subjects: TokenWidget,
     },
     widget: {
       array: ArrayWidget,
@@ -32,6 +34,7 @@ const applyConfig = (config) => {
       choices: SelectWidget,
       date: DateWidget,
       datetime: DatetimeWidget,
+      description: DescriptionWidget,
       email: EmailWidget,
       file: FileWidget,
       image: ImageWidget,
@@ -42,6 +45,7 @@ const applyConfig = (config) => {
       string: TextWidget,
       tags: TokenWidget,
       textarea: TextWidget,
+      title: TitleWidget,
       url: UrlWidget,
     },
     vocabulary: {},
