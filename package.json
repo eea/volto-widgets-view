@@ -1,6 +1,6 @@
 {
   "name": "@eeacms/volto-widgets-view",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Volto Widgets in View mode",
   "main": "src/index.js",
   "scripts": {

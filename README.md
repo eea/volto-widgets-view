@@ -1,83 +1,82 @@
 # volto-widgets-view
 
-Add View components for Volto Widgets
+[![Releases](https://img.shields.io/github/v/release/eea/volto-widgets-view)](https://github.com/eea/volto-widgets-view/releases)
 
+Add View components for [Volto](https://github.com/plone/volto#volto) Widgets
 
-## Develop
+## Widgets
 
-Before starting make sure your development environment is properly set. See [Volto Developer Documentation](https://docs.voltocms.com/getting-started/install/)
+* [ArrayWidget](src/components/theme/Widgets/ArrayWidget.jsx)
+* [BooleanWidget](src/components/theme/Widgets/BooleanWidget.jsx)
+* [DatetimeWidget](src/components/theme/Widgets/DatetimeWidget.jsx)
+* [DateWidget](src/components/theme/Widgets/DateWidget.jsx)
+* [DescriptionWidget](src/components/theme/Widgets/DescriptionWidget.jsx)
+* [EmailWidget](src/components/theme/Widgets/EmailWidget.jsx)
+* [FileWidget](src/components/theme/Widgets/FileWidget.jsx)
+* [ImageWidget](src/components/theme/Widgets/ImageWidget.jsx)
+* [PasswordWidget](src/components/theme/Widgets/PasswordWidget.jsx)
+* [RelationsWidget](src/components/theme/Widgets/RelationsWidget.jsx)
+* [RelationWidget](src/components/theme/Widgets/RelationWidget.jsx)
+* [RichTextWidget](src/components/theme/Widgets/RichTextWidget.jsx)
+* [SelectWidget](src/components/theme/Widgets/SelectWidget.jsx)
+* [TextWidget](src/components/theme/Widgets/TextWidget.jsx)
+* [TitleWidget](src/components/theme/Widgets/TitleWidget.jsx)
+* [TokenWidget](src/components/theme/Widgets/TokenWidget.jsx)
+* [UrlWidget](src/components/theme/Widgets/UrlWidget.jsx)
 
-1. Install `mrs.developer`
+## Usage 
 
-        $ npm install -g mrs.developer
+This package registers the above widgets within global `~/config` at `config.widgets.views`
 
-1. Install `@plone/create-volto-app`
+For usage examples see:
 
-        $ npm install -g @plone/create-volto-app
+* [volto-metadata-block](https://github.com/eea/volto-metadata-block)
+* [volto-slate-metadata-mentions](https://github.com/eea/volto-slate-metadata-mentions)
 
-1. Create new volto app
+## Getting started
 
-        $ create-volto-app my-volto-project
-        $ cd my-volto-project
+1. Create new volto project if you don't already have one:
+    ```
+    $ npm install -g @plone/create-volto-app
+    $ create-volto-app my-volto-project
+    $ cd my-volto-project
+    ```
 
-1. Update `package.json` with the following information:
+1. Update `package.json`:
+    ``` JSON
+    "addons": [
+        "@eeacms/volto-widgets-view",
+    ],
 
-        {
-            "name": "my-volto-project",
-            "description": "My Volto project",
+    "dependencies": {
+        "@plone/volto": "github:eea/volto#7.8.2-beta.2",
+        "@eeacms/volto-widgets-view": "github:eea/volto-widgets-view#0.2.4"
+    }
+    ```
 
-            "private": true,
-
-            "scripts": {
-                "develop": "missdev --config=jsconfig.json --output=addons"
-            },
-
-            "addons": [
-                "volto-slate",
-                "@eeacms/volto-widgets-view"
-            ],
-
-            "workspaces": [
-                "src/addons/volto-widgets-view"
-            ],
-
-            "dependencies": {
-                "@plone/volto": "github:eea/volto#7.7.0-beta.1"
-            }
-        }
-
-1. Add the following to `mrs.developer.json`:
-
-        {
-            "volto-widgets-view": {
-                "url": "https://github.com/eea/volto-widgets-view.git",
-                "package": "@eeacms/volto-widgets-view",
-                "branch": "develop",
-                "path": "src"
-            }
-        }
-
-1. Install
-
-        $ yarn develop
-        $ yarn
-
-1. Start backend
-
-        $ docker run -d --name plone -p 8080:8080 -e SITE=Plone -e VERSIONS="plone.restapi=7.0.0a4" -e ADDONS="kitconcept.volto" plone:5
-
-    ...wait for backend to setup and start - `Ready to handle requests`:
-
-        $ docker logs -f plone
-
-    ...you can also check http://localhost:8080/Plone
-
-1. Start frontend
-
-        $ yarn start
+1. Install new add-ons and restart Volto:
+    ```
+    $ yarn
+    $ yarn start
+    ```
 
 1. Go to http://localhost:3000
 
-1. Happy hacking!
+1. Happy editing!
 
-        $ cd src/addons/volto-widgets-view/
+
+## How to contribute
+
+See [DEVELOP.md](docs/DEVELOP.md).
+
+
+## Copyright and license
+
+The Initial Owner of the Original Code is European Environment Agency (EEA).
+All Rights Reserved.
+
+See [LICENSE.md](docs/LICENSE.md) for details.
+
+## Funding
+
+[European Environment Agency (EU)](http://eea.europa.eu)
