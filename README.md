@@ -24,7 +24,7 @@ Add View components for [Volto](https://github.com/plone/volto#volto) Widgets
 * [TokenWidget](src/components/theme/Widgets/TokenWidget.jsx)
 * [UrlWidget](src/components/theme/Widgets/UrlWidget.jsx)
 
-## Usage 
+## Usage
 
 This package registers the above widgets within global `~/config` at `config.widgets.views`
 
@@ -49,8 +49,8 @@ For usage examples see:
     ],
 
     "dependencies": {
-        "@plone/volto": "github:eea/volto#7.8.2-beta.2",
-        "@eeacms/volto-widgets-view": "github:eea/volto-widgets-view#0.2.4"
+        "@plone/volto": "8.0.0",
+        "@eeacms/volto-widgets-view": "1.0.0"
     }
     ```
 
@@ -67,7 +67,7 @@ For usage examples see:
 
 ## How to contribute
 
-See [DEVELOP.md](docs/DEVELOP.md).
+See [DEVELOP.md](DEVELOP.md).
 
 
 ## Copyright and license
@@ -75,7 +75,7 @@ See [DEVELOP.md](docs/DEVELOP.md).
 The Initial Owner of the Original Code is European Environment Agency (EEA).
 All Rights Reserved.
 
-See [LICENSE.md](docs/LICENSE.md) for details.
+See [LICENSE.md](LICENSE.md) for details.
 
 ## Funding
 
