@@ -6,23 +6,23 @@ Add View components for [Volto](https://github.com/plone/volto#volto) Widgets
 
 ## Widgets
 
-* [ArrayWidget](src/components/theme/Widgets/ArrayWidget.jsx)
-* [BooleanWidget](src/components/theme/Widgets/BooleanWidget.jsx)
-* [DatetimeWidget](src/components/theme/Widgets/DatetimeWidget.jsx)
-* [DateWidget](src/components/theme/Widgets/DateWidget.jsx)
-* [DescriptionWidget](src/components/theme/Widgets/DescriptionWidget.jsx)
-* [EmailWidget](src/components/theme/Widgets/EmailWidget.jsx)
-* [FileWidget](src/components/theme/Widgets/FileWidget.jsx)
-* [ImageWidget](src/components/theme/Widgets/ImageWidget.jsx)
-* [PasswordWidget](src/components/theme/Widgets/PasswordWidget.jsx)
-* [RelationsWidget](src/components/theme/Widgets/RelationsWidget.jsx)
-* [RelationWidget](src/components/theme/Widgets/RelationWidget.jsx)
-* [RichTextWidget](src/components/theme/Widgets/RichTextWidget.jsx)
-* [SelectWidget](src/components/theme/Widgets/SelectWidget.jsx)
-* [TextWidget](src/components/theme/Widgets/TextWidget.jsx)
-* [TitleWidget](src/components/theme/Widgets/TitleWidget.jsx)
-* [TokenWidget](src/components/theme/Widgets/TokenWidget.jsx)
-* [UrlWidget](src/components/theme/Widgets/UrlWidget.jsx)
+* [ArrayWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/ArrayWidget.jsx)
+* [BooleanWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/BooleanWidget.jsx)
+* [DatetimeWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/DatetimeWidget.jsx)
+* [DateWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/DateWidget.jsx)
+* [DescriptionWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/DescriptionWidget.jsx)
+* [EmailWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/EmailWidget.jsx)
+* [FileWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/FileWidget.jsx)
+* [ImageWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/ImageWidget.jsx)
+* [PasswordWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/PasswordWidget.jsx)
+* [RelationsWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/RelationsWidget.jsx)
+* [RelationWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/RelationWidget.jsx)
+* [RichTextWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/RichTextWidget.jsx)
+* [SelectWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/SelectWidget.jsx)
+* [TextWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/TextWidget.jsx)
+* [TitleWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/TitleWidget.jsx)
+* [TokenWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/TokenWidget.jsx)
+* [UrlWidget](https://github.com/eea/volto-widgets-view/blob/master/src/components/theme/Widgets/UrlWidget.jsx)
 
 ## Usage
 
@@ -67,7 +67,7 @@ For usage examples see:
 
 ## How to contribute
 
-See [DEVELOP.md](DEVELOP.md).
+See [DEVELOP.md](https://github.com/eea/volto-widgets-view/blob/master/DEVELOP.md).
 
 
 ## Copyright and license
@@ -75,7 +75,7 @@ See [DEVELOP.md](DEVELOP.md).
 The Initial Owner of the Original Code is European Environment Agency (EEA).
 All Rights Reserved.
 
-See [LICENSE.md](LICENSE.md) for details.
+See [LICENSE.md](https://github.com/eea/volto-widgets-view/blob/master/LICENSE.md) for details.
 
 ## Funding
 
