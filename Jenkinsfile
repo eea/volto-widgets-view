@@ -49,6 +49,7 @@ pipeline {
                   sh '''docker cp $BUILD_TAG-volto:/opt/frontend/my-volto-project/junit.xml xunit-reports/'''
                   sh '''docker cp $BUILD_TAG-volto:/opt/frontend/my-volto-project/unit_tests_log.txt xunit-reports/'''
                   sh '''ls -ltr xunit-reports/*'''
+                  sh '''cat xunit-reports/xunit-reports/junit.xml'''
                   stash name: "xunit-reports", includes: "xunit-reports/**/*"
                   junit 'xunit-reports/xunit-reports/junit.xml'
                   archiveArtifacts artifacts: 'xunit-reports/unit_tests_log.txt', fingerprint: true
