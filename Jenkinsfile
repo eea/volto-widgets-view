@@ -81,10 +81,7 @@ pipeline {
         node(label: 'swarm') {
           script{
             checkout scm
-            dir("xunit-reports") {
-              unstash "xunit-reports"
-              sh '''mv xunit-reports/xunit-reports xunit-reports'''
-            }
+            unstash "xunit-reports"
             def scannerHome = tool 'SonarQubeScanner';
             def nodeJS = tool 'NodeJS11';
             withSonarQubeEnv('Sonarqube') {
