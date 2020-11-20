@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import { RelationWidget } from './RelationWidget';
+import { RelationWidget } from '@eeacms/volto-widgets-view/components/theme/Widgets/RelationWidget';
 
 export const RelationsWidget = ({ value, children, className }) =>
   value ? (
