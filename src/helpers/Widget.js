@@ -1,4 +1,4 @@
-import { settings, widgets } from '~/config';
+import config from '@plone/volto/registry';
 
 /**
  * Get widget by field's `id` attribute
@@ -6,7 +6,7 @@ import { settings, widgets } from '~/config';
  * @param {string} id Id
  * @returns {string} Widget component.
  */
-const getWidgetByFieldId = (id) => widgets.views.id[id] || null;
+const getWidgetByFieldId = (id) => config.widgets.views.id[id] || null;
 
 /**
  * Get widget by field's `widget` attribute
@@ -16,7 +16,7 @@ const getWidgetByFieldId = (id) => widgets.views.id[id] || null;
  */
 const getWidgetByName = (widget) =>
   typeof widget === 'string'
-    ? widgets.views.widget[widget] || getWidgetDefault()
+    ? config.widgets.views.widget[widget] || getWidgetDefault()
     : null;
 
 /**
@@ -27,8 +27,11 @@ const getWidgetByName = (widget) =>
  */
 const getWidgetByVocabulary = (vocabulary) =>
   vocabulary && vocabulary['@id']
-    ? widgets.views.vocabulary[
-        vocabulary['@id'].replace(`${settings.apiPath}/@vocabularies/`, '')
+    ? config.widgets.views.vocabulary[
+        vocabulary['@id'].replace(
+          `${config.settings.apiPath}/@vocabularies/`,
+          '',
+        )
       ]
     : null;
 
@@ -40,9 +43,9 @@ const getWidgetByVocabulary = (vocabulary) =>
  */
 const getWidgetByVocabularyFromHint = (props) =>
   props.widgetOptions && props.widgetOptions.vocabulary
-    ? widgets.views.vocabulary[
+    ? config.widgets.views.vocabulary[
         props.widgetOptions.vocabulary['@id'].replace(
-          `${settings.apiPath}/@vocabularies/`,
+          `${config.settings.apiPath}/@vocabularies/`,
           '',
         )
       ]
@@ -56,14 +59,14 @@ const getWidgetByVocabularyFromHint = (props) =>
  */
 const getWidgetByChoices = (props) => {
   if (props.choices) {
-    return widgets.views.choices;
+    return config.widgets.views.choices;
   }
 
   if (props.vocabulary) {
     // If vocabulary exists, then it means it's a choice field in disguise with
     // no widget specified that probably contains a string then we force it
     // to be a select widget instead
-    return widgets.views.choices;
+    return config.widgets.views.choices;
   }
 
   return null;
@@ -75,14 +78,14 @@ const getWidgetByChoices = (props) => {
  * @param {string} type Type
  * @returns {string} Widget component.
  */
-const getWidgetByType = (type) => widgets.views.type[type] || null;
+const getWidgetByType = (type) => config.widgets.views.type[type] || null;
 
 /**
  * Get default widget
  * @method getWidgetDefault
  * @returns {string} Widget component.
  */
-const getWidgetDefault = () => widgets.views.default;
+const getWidgetDefault = () => config.widgets.views.default;
 
 /**
  * Get Widget View

@@ -27,7 +27,7 @@ Add View components for [Volto](https://github.com/plone/volto#volto) Widgets
 
 ## Usage
 
-This package registers the above widgets within global `~/config` at `config.widgets.views`
+This package registers the above widgets within global `@plone/volto/registry` at `config.widgets.views`
 
 For usage examples see:
 
