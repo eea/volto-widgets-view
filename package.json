@@ -1,6 +1,6 @@
 {
   "name": "@eeacms/volto-widgets-view",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Volto Widgets in View mode",
   "main": "src/index.js",
   "author": "European Environment Agency: IDM2 A-Team",
@@ -18,8 +18,7 @@
     "type": "git",
     "url": "git@github.com:eea/volto-widgets-view.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.5",
     "babel-plugin-transform-class-properties": "^6.24.1"
