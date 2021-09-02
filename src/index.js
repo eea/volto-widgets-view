@@ -19,7 +19,6 @@ import { UrlWidget } from '@eeacms/volto-widgets-view/components';
 
 const applyConfig = (config) => {
   config.widgets.views = {
-    ...config.widgets.views,
     getWidget: getWidgetView,
     default: TextWidget,
     id: {
@@ -27,6 +26,7 @@ const applyConfig = (config) => {
       image: ImageWidget,
       relatedItems: RelationsWidget,
       subjects: TokenWidget,
+      ...(config.widgets.views?.id || {}),
     },
     widget: {
       array: ArrayWidget,
@@ -47,12 +47,14 @@ const applyConfig = (config) => {
       textarea: TextWidget,
       title: TitleWidget,
       url: UrlWidget,
+      ...(config.widgets.views?.widget || {}),
     },
     vocabulary: {},
     choices: SelectWidget,
     type: {
       array: ArrayWidget,
       boolean: BooleanWidget,
+      ...(config.widgets.views?.type || {}),
     },
   };
 
