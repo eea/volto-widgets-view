@@ -15,10 +15,7 @@ const getWidgetByFieldId = (id) => config.widgets.views.id[id] || null;
  * @returns {string} Widget component.
  */
 const getWidgetByName = (widget) =>
-  typeof widget === 'string'
-    ? config.widgets.views.widget[widget] || getWidgetDefault()
-    : null;
-
+  typeof widget === 'string' ? config.widgets.views.widget[widget] : null;
 /**
  * Get widget by field's `vocabulary` attribute
  * @method getWidgetByVocabulary
