@@ -14,11 +14,8 @@ const getWidgetByFieldId = (id) => config.widgets.views.id[id] || null;
  * @param {string} widget Widget
  * @returns {string} Widget component.
  */
-const getWidgetByName = (widget) => {
-  return typeof widget === 'string'
-    ? config.widgets.views.widget[widget]
-    : null;
-};
+const getWidgetByName = (widget) =>
+  typeof widget === 'string' ? config.widgets.views.widget[widget] : null;
 /**
  * Get widget by field's `vocabulary` attribute
  * @method getWidgetByVocabulary
@@ -93,14 +90,11 @@ const getWidgetDefault = () => config.widgets.views.default;
  * @param {dict} props Props
  * @returns {string} Widget component.
  */
-export const getWidgetView = (props) => {
-  return (
-    getWidgetByFieldId(props.id) ||
-    getWidgetByName(props.widget) ||
-    getWidgetByChoices(props) ||
-    getWidgetByVocabulary(props.vocabulary) ||
-    getWidgetByVocabularyFromHint(props) ||
-    getWidgetByType(props.type) ||
-    getWidgetDefault()
-  );
-};
+export const getWidgetView = (props) =>
+  getWidgetByFieldId(props.id) ||
+  getWidgetByName(props.widget) ||
+  getWidgetByChoices(props) ||
+  getWidgetByVocabulary(props.vocabulary) ||
+  getWidgetByVocabularyFromHint(props) ||
+  getWidgetByType(props.type) ||
+  getWidgetDefault();
