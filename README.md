@@ -1,7 +1,18 @@
 # volto-widgets-view
 [![Releases](https://img.shields.io/github/v/release/eea/volto-widgets-view)](https://github.com/eea/volto-widgets-view/releases)
+
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-widgets-view%2Fmaster&subject=master)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-widgets-view/job/master/display/redirect)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-master&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-master)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-master&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-master)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-master&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-master)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-master&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-master)
+
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-widgets-view%2Fdevelop&subject=develop)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-widgets-view/job/develop/display/redirect)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-develop&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-develop)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-develop&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-develop)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-develop)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-widgets-view-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-widgets-view-develop)
+
 
 Add View components for [Volto](https://github.com/plone/volto#volto) Widgets
 
