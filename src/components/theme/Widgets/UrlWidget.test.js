@@ -11,7 +11,7 @@ describe('UrlWidget', () => {
 
   it('renders an URL view widget component', () => {
     const component = renderer.create(
-      <UrlWidget className="metadata" value="https://foobar.com" />,
+      <UrlWidget className="metadata" value="http://foobar.com" />,
     );
     const json = component.toJSON();
     expect(json).toMatchSnapshot();
@@ -19,7 +19,7 @@ describe('UrlWidget', () => {
 
   it('renders an URL view widget component with children', () => {
     const component = renderer.create(
-      <UrlWidget className="metadata" value="https://foobar.com">
+      <UrlWidget className="metadata" value="http://foobar.com">
         {(child) => <strong>{child}</strong>}
       </UrlWidget>,
     );
