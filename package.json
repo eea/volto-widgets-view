@@ -1,6 +1,6 @@
 {
   "name": "@eeacms/volto-widgets-view",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Volto Widgets in View mode",
   "main": "src/index.js",
   "author": "European Environment Agency: IDM2 A-Team",
